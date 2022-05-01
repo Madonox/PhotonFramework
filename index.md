@@ -12,4 +12,5 @@ AeroFramework is a very useful tool in game design.  It is very easy to work wit
 ---
 
 [Getting Started with AeroFramework →](https://madonox.github.io/AeroFramework/getting_started)
+
 [← Return to home page](https://madonox.github.io/AeroFramework/)
