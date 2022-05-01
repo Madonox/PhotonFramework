@@ -62,6 +62,17 @@ function AeroFramework.registerScript(ins)
 		warn("Cannot execute AeroScript, AeroFramework is not running.")
 	end
 end
+function AeroFramework.executeRaw(data)
+	if AeroFramework.running == true then
+		if typeof(data) == "table" then
+			if data.run and data.imports then
+				AeroFramework._internal.resources.Modules.Compiler.runScript(data)
+			end
+		end
+	else
+		warn("Cannot execute AeroScript, AeroFramework is not running.")
+	end
+end
 
 function AeroFramework.getService(name)
 	if AeroFramework.running == true then
