@@ -35,9 +35,11 @@ function AeroFramework.start()
 		for _,resourceContainer in ipairs(script.Parent.Internal.Resources:GetChildren()) do
 			resources[resourceContainer.Name] = import(resourceContainer,"init",false,services,classes)
 		end
-
+		
+		local externalClasses = import(script.Parent.Classes,"init",false,services)
+		
 		AeroFramework._internal.services = services
-		AeroFramework._internal.classes = classes
+		AeroFramework._internal.classes = {table.unpack(classes),table.unpack(externalClasses)}
 		AeroFramework._internal.resources = resources
 		
 		for _,scr in ipairs(script.Parent.Scripts:GetChildren()) do
