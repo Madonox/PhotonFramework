@@ -9,3 +9,6 @@ Why should you use AeroFramework over other frameworks?  Well, to answer that qu
 ## Why use AeroFramework at all:
 AeroFramework is a very useful tool in game design.  It is very easy to work with, and yet offers many game design tools, ranging from UI design services to providing variable syncing across server to client boundaries.
 
+---
+
+> [AeroFramework Documentation - Getting Started with AeroFramework →](https://madonox.github.io/AeroFramework/getting_started.md)
