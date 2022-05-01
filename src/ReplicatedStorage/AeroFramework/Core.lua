@@ -88,7 +88,11 @@ end
 
 function AeroFramework.getClass(name)
 	if AeroFramework.running == true then
-		
+		if AeroFramework._internal.classes[name] then
+			return AeroFramework._internal.classes[name]
+		else
+			warn("Cannot find class "..name..".")
+		end
 	else
 		warn("Cannot get service, AeroFramework is not running.")
 	end
