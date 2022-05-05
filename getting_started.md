@@ -51,10 +51,11 @@ In order to keep flexibility within the framework, services and classes can be u
 
 ## Service Documentation:
 AeroFramework offers a plethora of services that you can use and interact with.  These services are documented below.
+
 | Service Name | Documentation Link |
-|--|--|
+|--|--
 | CreateService | https://madonox.github.io/AeroFramework/service-docs/CreateService |
-| DataService |  |
+| DataService | https://madonox.github.io/AeroFramework/service-docs/DataService |
 | NetworkService |  |
 | ProcessService |  |
 | SharedService |  |
