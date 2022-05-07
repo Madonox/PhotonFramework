@@ -3,7 +3,7 @@
 ## CreateService
 CreateService is a basic service, made to provide simple and easy instance creation, as well as creating instances with custom classes bound to them.
 ## Raw API:
-The raw API contains base methods with their arguments.
+
 | Method | Argument(s) | Notes |
 |--|--|--|
 | Create | InstanceName:String, InstanceProperties:Table |
