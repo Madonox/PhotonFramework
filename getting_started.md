@@ -1,4 +1,5 @@
 
+
 # AeroFramework
 
 ## Getting started:
@@ -60,7 +61,7 @@ AeroFramework offers a plethora of services that you can use and interact with. 
 | NetworkService | [https://madonox.github.io/AeroFramework/service-docs/NetworkService](https://madonox.github.io/AeroFramework/service-docs/DataService) |
 | ProcessService |  |
 | SharedService |  |
-| UIService |  |
+| UIService | [https://madonox.github.io/AeroFramework/service-docs/UIService](https://madonox.github.io/AeroFramework/service-docs/UIService) |
 
 
 ---
