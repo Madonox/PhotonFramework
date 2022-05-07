@@ -3,7 +3,7 @@
 ## DataService
 DataService is a quite simple service, made with the purpose of being able to share data across scripts easily.  The service allows for real-time variable updating and syncing and is lightweight.
 ## Raw API:
-The raw API contains base methods with their arguments.
+
 | Method | Argument(s) | Notes |
 |--|--|--|
 | storeData | Key:String, Data:Any |
