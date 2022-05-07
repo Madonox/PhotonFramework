@@ -1,9 +1,9 @@
 -- Madonox
 -- 2022
 
-local PhotonFramework = {}
+local PhotonScript = {}
 
-PhotonFramework.imports = { -- List of imported services.
+PhotonScript.imports = { -- List of imported services.
 	Services = {
 		DataService = true;
 	};
@@ -13,7 +13,7 @@ PhotonFramework.imports = { -- List of imported services.
 	};
 }
 
-PhotonFramework.run = function(importedServices,importedClasses)
+PhotonScript.run = function(importedServices,importedClasses)
 	local DataService = importedServices.DataService
 	
 	DataService.storeData("key goes here",true)
@@ -25,4 +25,4 @@ PhotonFramework.run = function(importedServices,importedClasses)
 	end)
 end
 
-return PhotonFramework
+return PhotonScript
