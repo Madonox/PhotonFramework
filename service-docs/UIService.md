@@ -4,7 +4,7 @@
 ## UIService
 UIService is a more complex service, made to allow users to create complex and interactive UI quite simply.  While the service may appear to be a more performance impacting system, it is not.  The service is actually still quite lightweight, and would only cause performance errors based on memory leaks created by users.
 ## Raw API:
-The raw API contains base methods with their arguments.
+
 | Method | Argument(s) | Notes |
 |--|--|--|
 | CreateAspect | ElementClass:String, Data:Table |The `data` table may contain three subtables, with but the `Properties` subtable being optional.  The first of these tables is `Properties`, which contain the properties of the element.  The second of these tables is `Connections`, which contain the connections attached to this element.  The final table, `Children` contains all children of the UI element.  You may supply external UI elements for the Children table, as the UIService is made to be able to work with pre-existing UI.
