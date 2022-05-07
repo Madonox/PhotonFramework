@@ -1,7 +1,7 @@
 -- Madonox
 -- 2022
 
-local AeroFramework = require(game.ReplicatedStorage.AeroFramework.Core)
+local PhotonFramework = require(game.ReplicatedStorage.PhotonFramework.Core)
 
-AeroFramework.start()
+PhotonFramework.start()
 

@@ -19,7 +19,7 @@ function Compiler.runScript(source)
 				if Compiler.services[service] then
 					fenvData[service] = Compiler.services[service]
 				else
-					warn("AeroFramework compiler error: Cannot find service "..service)
+					warn("PhotonFramework compiler error: Cannot find service "..service)
 					canRun = false
 					break
 				end
@@ -30,7 +30,7 @@ function Compiler.runScript(source)
 				if Compiler.classes[class] then
 					classData[class] = Compiler.classes[class]
 				else
-					warn("AeroFramework compiler error: Cannot find class "..class)
+					warn("PhotonFramework compiler error: Cannot find class "..class)
 					canRun = false
 					break
 				end
@@ -41,7 +41,7 @@ function Compiler.runScript(source)
 				source.run(fenvData,classData)
 			end)
 			if not success then
-				warn("AeroFramework script execution error: "..err)
+				warn("PhotonFramework script execution error: "..err)
 			end
 		end
 	end)()
