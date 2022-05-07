@@ -4,7 +4,7 @@
 ## NetworkService
 NetworkService is a service made to make server-client communication simple, easy, and secure.  While the framework handles all the backend work and security, you can begin to easily create methods and setup many connections in minutes.
 ## Raw API:
-The raw API contains base methods with their arguments.
+
 | Method | Argument(s) | Notes |
 |--|--|--|
 | bind | MethodName:String, Callback:Function |
