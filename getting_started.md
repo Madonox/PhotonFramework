@@ -57,7 +57,7 @@ AeroFramework offers a plethora of services that you can use and interact with. 
 |--|--
 | CreateService | [https://madonox.github.io/AeroFramework/service-docs/CreateService](https://madonox.github.io/AeroFramework/service-docs/CreateService) |
 | DataService | [https://madonox.github.io/AeroFramework/service-docs/DataService](https://madonox.github.io/AeroFramework/service-docs/DataService) |
-| NetworkService |  |
+| NetworkService | [https://madonox.github.io/AeroFramework/service-docs/NetworkService](https://madonox.github.io/AeroFramework/service-docs/DataService) |
 | ProcessService |  |
 | SharedService |  |
 | UIService |  |
