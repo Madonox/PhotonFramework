@@ -5,7 +5,7 @@ local AeroScript = {}
 
 AeroScript.imports = { -- List of imported services.
 	Services = {
-		SharedService = true;
+		DataService = true;
 	};
 	
 	Classes = {
@@ -14,20 +14,15 @@ AeroScript.imports = { -- List of imported services.
 }
 
 AeroScript.run = function(importedServices,importedClasses)
-	local SharedService = importedServices.SharedService
+	local DataService = importedServices.DataService
 	
-	SharedService.update("DemoValue",true)
-	print(SharedService.get("DemoValue"))
-	
-	local var = importedClasses.Variable.new("test",function()
-		print("called")
+	DataService.storeData("key goes here",true)
+	task.delay(3,function()
+		DataService.storeData("key goes here",false)
 	end)
-	var()
-	var.ValueChanged:Connect(function(oldValue,newValue)
-		print(oldValue)
-		print(newValue)
+	task.delay(5,function()
+		print(DataService.getData("key goes here"))
 	end)
-	var:SetValue("test 2")
 end
 
 return AeroScript
