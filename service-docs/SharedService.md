@@ -1,5 +1,5 @@
 
-# AeroFramework
+# PhotonFramework
 
 ## SharedService
 SharedService is a similar service to DataService, but allows for variable syncing.  In a nutshell, this service allows for the server to update variables on the client with ease.  Please note, this only works for server to clients, as otherwise it would be too big a security risk to add.
@@ -12,15 +12,15 @@ SharedService is a similar service to DataService, but allows for variable synci
 ## SharedService.get:
 Returns the requested value.
 ```lua
-local SharedService = AeroFramework.getService("SharedService")
+local SharedService = PhotonFramework.getService("SharedService")
 print(SharedService.get("some key here"))
 ```
 ## SharedService.update:
 This method allows you to update a value within the service.
 ```lua
-local SharedService = AeroFramework.getService("SharedService")
+local SharedService = PhotonFramework.getService("SharedService")
 SharedService.update("some key here","some value here")
 ```
 
 ---
-[← Return to home page](https://madonox.github.io/AeroFramework/)
+[← Return to home page](https://madonox.github.io/PhotonFramework/)
