@@ -1,5 +1,5 @@
 
-# AeroFramework
+# PhotonFramework
 
 ## UIService
 UIService is a more complex service, made to allow users to create complex and interactive UI quite simply.  While the service may appear to be a more performance impacting system, it is not.  The service is actually still quite lightweight, and would only cause performance errors based on memory leaks created by users.
@@ -13,7 +13,7 @@ UIService is a more complex service, made to allow users to create complex and i
 ## UIService.CreateAspect:
 This method allows you to create a UI element, for use either within a UIService constructed node, or externally.  This method features a plethora of customization options, and a demo is provided below.
 ```lua
-local UIService = AeroFramework.getService("UIService")
+local UIService = PhotonFramework.getService("UIService")
 local uiAspect = UIService.CreateAspect("Frame",{
 	Properties = {
 		BackgroundTransparency = 0.5;
@@ -38,7 +38,7 @@ local uiAspect = UIService.CreateAspect("Frame",{
 ## UIService.createNode:
 This method creates a GUI container for UI, and can be shown with the `constructNode` method.
 ```lua
-local UIService = AeroFramework.getService("UIService")
+local UIService = PhotonFramework.getService("UIService")
 local uiNode = UIService.createNode("ScreenGui",{
 	ResetOnSpawn = false;
 })
@@ -47,10 +47,10 @@ uiAspect.Parent = uiNode
 ## UIService.constructNode:
 This method allows you to "show" the UI that you have created.  The method is quite simple, and can be used to render UI from the server to client.
 ```lua
-local UIService = AeroFramework.getService("UIService")
+local UIService = PhotonFramework.getService("UIService")
 UIService.constructNode(uiNode,"local") -- Providing "local" as a parent on the server replicates the UI to all clients, and displays it as a ScreenGui.
 -- You can also just supply a directory and the UI will go there.
 ```
 
 ---
-[← Return to home page](https://madonox.github.io/AeroFramework/)
+[← Return to home page](https://madonox.github.io/PhotonFramework/)
