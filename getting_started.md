@@ -54,12 +54,12 @@ PhotonFramework offers a plethora of services that you can use and interact with
 
 | Service Name | Documentation Link |
 |--|--
-| CreateService | [https://madonox.github.io/AeroFramework/service-docs/CreateService](https://madonox.github.io/PhotonFramework/service-docs/CreateService) |
-| DataService | [https://madonox.github.io/AeroFramework/service-docs/DataService](https://madonox.github.io/PhotonFramework/service-docs/DataService) |
-| NetworkService | [https://madonox.github.io/AeroFramework/service-docs/NetworkService](https://madonox.github.io/PhotonFramework/service-docs/DataService) |
-| ProcessService | [https://madonox.github.io/AeroFramework/service-docs/ProcessService](https://madonox.github.io/PhotonFramework/service-docs/ProcessService) |
-| SharedService | [https://madonox.github.io/AeroFramework/service-docs/SharedService](https://madonox.github.io/PhotonFramework/service-docs/SharedService) |
-| UIService | [https://madonox.github.io/AeroFramework/service-docs/UIService](https://madonox.github.io/PhotonFramework/service-docs/UIService) |
+| CreateService | [https://madonox.github.io/PhotonFramework/service-docs/CreateService](https://madonox.github.io/PhotonFramework/service-docs/CreateService) |
+| DataService | [https://madonox.github.io/PhotonFramework/service-docs/DataService](https://madonox.github.io/PhotonFramework/service-docs/DataService) |
+| NetworkService | [https://madonox.github.io/PhotonFramework/service-docs/NetworkService](https://madonox.github.io/PhotonFramework/service-docs/DataService) |
+| ProcessService | [https://madonox.github.io/PhotonFramework/service-docs/ProcessService](https://madonox.github.io/PhotonFramework/service-docs/ProcessService) |
+| SharedService | [https://madonox.github.io/PhotonFramework/service-docs/SharedService](https://madonox.github.io/PhotonFramework/service-docs/SharedService) |
+| UIService | [https://madonox.github.io/PhotonFramework/service-docs/UIService](https://madonox.github.io/PhotonFramework/service-docs/UIService) |
 
 
 ---
