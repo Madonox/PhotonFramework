@@ -45,6 +45,15 @@ function AeroFramework.start()
 		for _,scr in ipairs(script.Parent.Scripts:GetChildren()) do
 			AeroFramework.registerScript(scr)
 		end
+		
+		if RunService:IsServer() then
+			local UpdateData = require(9040261328) -- Check for updates in framework.
+			if UpdateData.getData("AeroFramework",script.Parent.Internal.Resources.Build.Value) == false then
+				warn("AeroFramework is out-of-date!  Please see the DevForum post and download the latest version as soon as possible!")
+			end
+		else
+			script.Parent.Internal.Resources.Build:Destroy()
+		end
 	end
 end
 
