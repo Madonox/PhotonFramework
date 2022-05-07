@@ -44,7 +44,7 @@ rawPhotonScript.run = function(importedServices,importedClasses)
 	return true
 end
 
-PhotonFramework.executeRaw(rawAeroScript)
+PhotonFramework.executeRaw(rawPhotonScript)
 ```
 ## Interacting with PhotonFramework outside of PhotonScripts:
 In order to keep flexibility within the framework, services and classes can be used outside of the PhotonFramework environment.  In order to get a service, you would simply use the `PhotonFramework.getService` method, and to get a class, you would use the `PhotonFramework.getClass` method.  Please note, custom classes may be supplied to the framework, which can be accessed by PhotonScripts and the `getClass` method.
