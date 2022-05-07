@@ -33,12 +33,16 @@ CreateAspect("Frame",{
 
 function service.CreateAspect(ElementName,data)
 	local uiInstance = localCreate(ElementName,data.Properties)
-	for connectionName,callback in pairs(data.Connections) do
-		uiInstance[connectionName]:Connect(callback)
+	if data.Connections then
+		for connectionName,callback in pairs(data.Connections) do
+			uiInstance[connectionName]:Connect(callback)
+		end
 	end
 	
-	for _,child in ipairs(data.Children) do
-		child.Parent = uiInstance
+	if data.Children then
+		for _,child in ipairs(data.Children) do
+			child.Parent = uiInstance
+		end
 	end
 	return uiInstance
 end
