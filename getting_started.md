@@ -10,6 +10,15 @@ local PhotonFramework = require(game.ReplicatedStorage.PhotonFramework.Core)
 PhotonFramework.start()
 ```
 **Notice:** PhotonFramework must be started on **both** the client and server, or else unexpected behavior may occur.
+## Executing code when the framework starts:
+If you wish to bind code to when the framework starts, you can use the `onStart` method.  Below is an example.
+```lua
+local PhotonFramework = require(game.ReplicatedStorage.PhotonFramework.Core)
+PhotonFramework.onStart(function()
+	print("Framework started")
+end)
+```
+**Notice: ** if this is called after the framework starts, it will simply execute the code directly.
 ## Creating your first PhotonScript:
 PhotonScripts can be executed in two different ways.
 The first way would be to create a `ModuleScript` inside of the PhotonFramework folder's `Scripts` folder.  These scripts are executed when the framework is started, and will be executed on both the server and client.  The module will look like this:
