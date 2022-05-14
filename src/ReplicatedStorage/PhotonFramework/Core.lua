@@ -6,6 +6,8 @@ PhotonFramework._internal = {}
 PhotonFramework.running = false
 local RunService = game:GetService("RunService")
 
+local startup_functions = {}
+
 local function import(dir,startFunction,isNameLower,...)
 	local res = {}
 	for _,module in ipairs(dir:GetChildren()) do
@@ -54,16 +56,28 @@ function PhotonFramework.start()
 		else
 			script.Parent.Internal.Resources.Build:Destroy()
 		end
+		
+		for _,callback in ipairs(startup_functions) do
+			callback()
+		end
+		table.clear(startup_functions)
 	end
 end
 
-function PhotonFramework.registerScript(ins)
+function PhotonFramework.onStart(callback)
+	if PhotonFramework.running == true then
+		table.insert(startup_functions,callback)
+	else
+		callback()
+	end
+end
+function PhotonFramework.registerScript(ins,...)
 	if PhotonFramework.running == true then
 		if ins:IsA("ModuleScript") then
 			local req = require(ins)
 			if typeof(req) == "table" then
 				if req.run and req.imports then
-					PhotonFramework._internal.resources.Modules.Compiler.runScript(req)
+					PhotonFramework._internal.resources.Modules.Compiler.runScript(req,...)
 				end
 			end
 		end
@@ -71,11 +85,11 @@ function PhotonFramework.registerScript(ins)
 		warn("Cannot execute PhotonScript, PhotonFramework is not running.")
 	end
 end
-function PhotonFramework.executeRaw(data)
+function PhotonFramework.executeRaw(data,...)
 	if PhotonFramework.running == true then
 		if typeof(data) == "table" then
 			if data.run and data.imports then
-				PhotonFramework._internal.resources.Modules.Compiler.runScript(data)
+				PhotonFramework._internal.resources.Modules.Compiler.runScript(data,...)
 			end
 		end
 	else

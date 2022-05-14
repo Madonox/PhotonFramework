@@ -9,7 +9,8 @@ function Compiler.init(services,classes)
 	Compiler.init = nil
 end
 
-function Compiler.runScript(source)
+function Compiler.runScript(source,...)
+	local compactArgs = {...}
 	coroutine.wrap(function()
 		local fenvData = {}
 		local classData = {}
@@ -38,7 +39,7 @@ function Compiler.runScript(source)
 		end
 		if canRun == true then
 			local success,err = pcall(function()
-				source.run(fenvData,classData)
+				source.run(fenvData,classData,table.unpack(compactArgs))
 			end)
 			if not success then
 				warn("PhotonFramework script execution error: "..err)
