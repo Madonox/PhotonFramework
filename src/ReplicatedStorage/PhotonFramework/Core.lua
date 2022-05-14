@@ -65,7 +65,7 @@ function PhotonFramework.start()
 end
 
 function PhotonFramework.onStart(callback)
-	if PhotonFramework.running == true then
+	if PhotonFramework.running == false then
 		table.insert(startup_functions,callback)
 	else
 		callback()
