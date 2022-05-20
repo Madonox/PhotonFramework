@@ -1,7 +1,7 @@
 # PhotonFramework
 
 ## Getting started:
-In order to begin using PhotonFramework, you must firstly insert the model into `ReplicatedStorage`.  The model can be acquired [here](https://www.roblox.com/library/9520924964).  Once the model is inserted, we can begin to use it!
+In order to begin using PhotonFramework, you must firstly insert the model into `ReplicatedStorage`.  The model can be acquired [here](https://www.roblox.com/library/9520924964](https://www.roblox.com/library/9520924964/PhotonFramework).  Once the model is inserted, we can begin to use it!
 
 ## Initializing the framework:
 Once we have our model inserted, we will want to begin using it.  Before we can begin using it however, we must first start it.  This can be done quite simply, and a demo code bit is supplied below.
